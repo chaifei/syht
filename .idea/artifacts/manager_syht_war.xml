@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="manager-syht:war">
+    <output-path>$PROJECT_DIR$/manager-syht/target</output-path>
+    <root id="archive" name="syht.war">
+      <element id="artifact" artifact-name="manager-syht:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd ">
+ 	
+ 	<context:component-scan base-package="com.bdqn.syht.quartz" />
+ 	
+ 	<!-- 任务 -->
+ 	<bean id="helloJob" 
+ 		class="org.springframework.scheduling.quartz.JobDetailFactoryBean">
+ 		<property name="jobClass" value="com.bdqn.syht.quartz.PromotionJob" />
+ 	</bean>
+ 	
+ 	<!-- 触发器 -->
+ 	<bean id="simpleTrigger" 
+ 		class="org.springframework.scheduling.quartz.SimpleTriggerFactoryBean">
+ 		<property name="jobDetail" ref="helloJob" />
+ 		<!-- 3秒后第一次执行 -->
+ 		<property name="startDelay" value="3000" />
+ 		<!-- 5秒后重复执行 -->
+ 		<property name="repeatInterval" value="60000" />
+ 	</bean>
+ 	
+ 	<!-- 执行器  -->
+ 	<bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+ 		<property name="jobFactory" ref="jobFactory" />
+ 		<property name="triggers">
+ 			<list>
+ 				<ref bean="simpleTrigger"/>
+ 			</list>
+ 		</property>
+ 	</bean>
+ 	
+</beans>

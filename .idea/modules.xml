@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/client-syht/client-syht.iml" filepath="$PROJECT_DIR$/client-syht/client-syht.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fastdfs_client/fastdfs_client.iml" filepath="$PROJECT_DIR$/fastdfs_client/fastdfs_client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/manager-crm/manager-crm.iml" filepath="$PROJECT_DIR$/manager-crm/manager-crm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/manager-syht/manager-syht.iml" filepath="$PROJECT_DIR$/manager-syht/manager-syht.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parent-syht.iml" filepath="$PROJECT_DIR$/parent-syht.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pojo-crm/pojo-crm.iml" filepath="$PROJECT_DIR$/pojo-crm/pojo-crm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pojo-syht/pojo-syht.iml" filepath="$PROJECT_DIR$/pojo-syht/pojo-syht.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sms-syht/sms-syht.iml" filepath="$PROJECT_DIR$/sms-syht/sms-syht.iml" />
+    </modules>
+  </component>
+</project>
